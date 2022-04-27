@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title></title>
+    <title>test</title>
     <link href="/2022/04/27/test/"/>
     <url>/2022/04/27/test/</url>
     
-    <content type="html"><![CDATA[<h1 id="vscode-配置教程"><a href="#vscode-配置教程" class="headerlink" title="vscode 配置教程"></a><strong>vscode</strong> 配置教程</h1><ol><li><p>从官网上下载vscode（速度较慢，可以从腾讯电脑管家下载）：</p><p><img src="/test/1.png" alt="1"></p></li><li><p>必应搜索<strong>谷雨同学</strong>，或者直接访问链接：<a href="https://vscch3.vercel.app/">https://vscch3.vercel.app/</a></p></li><li><p>下载第一个，然后直接打开，按照步骤操作：</p><p><img src="D:\blog\Q9-K\source_posts\test\2.png" alt="2"></p><p><img src="D:\blog\Q9-K\source_posts\test\3.png" alt="3"></p><p><img src="D:\blog\Q9-K\source_posts\test\4.png" alt="4"></p><p><img src="D:\blog\Q9-K\source_posts\test\5.png" alt="5"></p><p><img src="D:\blog\Q9-K\source_posts\test\6.png"></p><p><img src="D:\blog\Q9-K\source_posts\test\7.png" alt="7"></p><ol start="4"><li><p>进入<strong>vscode</strong>后，<strong>vscode</strong>检测到c文件自动推荐关于c的插件，无脑下载即可，不推荐下载<strong>code runner</strong>插件</p></li><li><p>进行到这里，现在你应该打开vscode能看到这样的画面,先简单配置一下自动保存格式话吧：</p><p>按下<strong>ctrl</strong>+<strong>，</strong>打开设置区域，找到下列选项勾上</p><p><img src="D:\blog\Q9-K\source_posts\test\8.png" alt="8"></p><p><img src="D:\blog\Q9-K\source_posts\test\9.png" alt="9"></p><ol start="6"><li><p>然后打开一个测试文件试试<strong>vscode</strong>能否使用吧！</p><p>简单演示一下内置终端的使用方法：</p><p><img src="D:\blog\Q9-K\source_posts\test\10.png" alt="10"></p><p>点他，选择<strong>以非调试模式运行</strong>然后下方弹出内置终端：</p><p>​<img src="D:\blog\Q9-K\source_posts\test\11.png" alt="11"></p><p>就能得到结果啦！</p><p><img src="D:\blog\Q9-K\source_posts\test\12.png" alt="12"></p><p>在终端区有的电脑<strong>ctrl</strong>+<strong>v</strong>能够粘贴内容，而有的电脑则需要<strong>ctrl</strong>+<strong>shift</strong>+<strong>v</strong>，原因暂时未知</p></li><li><p>下面再演示一下调试功能，在代码区随便打一个断点，在上述运行选项中选择<strong>调试</strong>，如下图：</p><p>​<img src="D:\blog\Q9-K\source_posts\test\13.png" alt="13"></p><ol start="8"><li>好了，<strong>vscode</strong>的基本使用就介绍到这里，<strong>vscode</strong>本质上是一个编辑器，但丰富的插件内容让<strong>vscode</strong>的使用体验变得不错，大家请自行探索<strong>vscode</strong>的其他内容.</li></ol></li></ol></li></ol></li></ol><p>​</p>]]></content>
+    <content type="html"><![CDATA[<p><img src="/image-20220427163605832.png" alt="image-20220427163605832"></p>]]></content>
     
     
     
@@ -21,7 +21,7 @@
     <link href="/2022/04/22/hello/"/>
     <url>/2022/04/22/hello/</url>
     
-    <content type="html"><![CDATA[<h1 id="第一个blog"><a href="#第一个blog" class="headerlink" title="第一个blog"></a>第一个blog</h1><p>你好，我是来自BUAA的一枚小蒟蒻，在今天搭建好了自己的第一个博客<br>如果你看到这篇博客的话，不妨给我的仓库一个star哦</p><h3 id="我的联系方式-x32-x30-51-55-x34-x33-49-x39-64-x62-117-x61-x61-x2e-x65-x64-117-x2e-99-110"><a href="#我的联系方式-x32-x30-51-55-x34-x33-49-x39-64-x62-117-x61-x61-x2e-x65-x64-117-x2e-99-110" class="headerlink" title="我的联系方式:&#x32;&#x30;&#51;&#55;&#x34;&#x33;&#49;&#x39;&#64;&#x62;&#117;&#x61;&#x61;&#x2e;&#x65;&#x64;&#117;&#x2e;&#99;&#110;"></a>我的联系方式:<a href="mailto:&#x32;&#x30;&#51;&#55;&#x34;&#x33;&#49;&#x39;&#64;&#x62;&#117;&#x61;&#x61;&#x2e;&#x65;&#x64;&#117;&#x2e;&#99;&#110;">&#x32;&#x30;&#51;&#55;&#x34;&#x33;&#49;&#x39;&#64;&#x62;&#117;&#x61;&#x61;&#x2e;&#x65;&#x64;&#117;&#x2e;&#99;&#110;</a></h3>]]></content>
+    <content type="html"><![CDATA[<h1 id="第一个blog"><a href="#第一个blog" class="headerlink" title="第一个blog"></a>第一个blog</h1><p>你好，我是来自BUAA的一枚小蒟蒻，在今天搭建好了自己的第一个博客<br>如果你看到这篇博客的话，不妨给我的仓库一个star哦</p><h3 id="我的联系方式-50-x30-51-x37-x34-x33-49-x39-64-98-117-x61-97-46-101-100-x75-x2e-x63-x6e"><a href="#我的联系方式-50-x30-51-x37-x34-x33-49-x39-64-98-117-x61-97-46-101-100-x75-x2e-x63-x6e" class="headerlink" title="我的联系方式:&#50;&#x30;&#51;&#x37;&#x34;&#x33;&#49;&#x39;&#64;&#98;&#117;&#x61;&#97;&#46;&#101;&#100;&#x75;&#x2e;&#x63;&#x6e;"></a>我的联系方式:<a href="mailto:&#50;&#x30;&#51;&#x37;&#x34;&#x33;&#49;&#x39;&#64;&#98;&#117;&#x61;&#97;&#46;&#101;&#100;&#x75;&#x2e;&#x63;&#x6e;">&#50;&#x30;&#51;&#x37;&#x34;&#x33;&#49;&#x39;&#64;&#98;&#117;&#x61;&#97;&#46;&#101;&#100;&#x75;&#x2e;&#x63;&#x6e;</a></h3>]]></content>
     
     
     
