@@ -1,76 +1,33 @@
-(function ($) {
+// 表格相册
+$("table")
+  .has("img")
+  .addClass("nexmoe-album");
 
-  "use strict";
+// 搜索
+function search() {
+  window.open($("#search_form").attr("action_e") + " " + $("#search_value").val());
+  return false;
+}
 
-  var toggleActive = function (self, e) {
-    e.preventDefault();
-    if (self.hasClass("active") === true) {
-      self.removeClass("active");
-    } else {
-      self.addClass("active");
-    }
-  };
-
-  var switchSidebarTab = function (e) {
-    var self = $(this),
-      target = self.attr('data-toggle'),
-      counter_target = target === 'toc' ? 'bio' : 'toc';
-    if (self.hasClass('active')) {
-      return;
-    }
-    toggleActive(self, e);
-    toggleActive(self.siblings('.dark-btn'), e);
-    $('.site-' + counter_target).toggleClass('show');
-    setTimeout(function () {
-      $('.site-' + counter_target).hide();
-      $('.site-' + target).show();
-      setTimeout(function () {
-        $('.site-' + target).toggleClass('show');
-      }, 50);
-    }, 240);
-  };
-
-  var scrolltoElement = function (e) {
-    e.preventDefault();
-    var self = $(this),
-      correction = e.data ? e.data.correction ? e.data.correction : 0 : 0;
-    $('html, body').animate({'scrollTop': $(self.attr('href')).offset().top - correction}, 400);
-  };
-
-  var closeMenu = function (e) {
-    e.stopPropagation();
-    $('body').removeClass('menu-open');
-    $('#site-nav-switch').removeClass('active');
-  };
-
-  var toggleMenu = function (e) {
-    e.stopPropagation();
-    $('body').toggleClass('menu-open');
-    $('#site-nav-switch').toggleClass('active');
-  };
-
-  var pixivArchiveStat = function () {
-    var vol = $(".article-entry ul").length;
-    var artistCount = $(".article-entry ul li").length;
-    $("#pixiv-vol").text(vol);
-    $("#pixiv-artist-count").text(artistCount);
-  };
-
-  $(function () {
-    $('#footer, #main').addClass('loaded');
-    $('#site-nav-switch').on('click', toggleMenu);
-    $('#site-wrapper .overlay, #sidebar-close').on('click', closeMenu);
-    $('.window-nav, .site-toc a').on('click', scrolltoElement);
-    $(".content .video-container").fitVids();
-    $('#site-sidebar .sidebar-switch .dark-btn').on('click', switchSidebarTab);
-
-    if (window.location.pathname === '/pixiv' || window.location.pathname === '/pixiv/') {
-      pixivArchiveStat();
-    }
-
-    setTimeout(function () {
-      $('#loading-bar-wrapper').fadeOut(500);
-    }, 300);
+// 平滑跳转同时修复锚点链接被转义
+$(document).ready(function () {
+  $("a.toc-link").click(function (ev) {
+    ev.preventDefault();
+    $("html, body").animate({
+      scrollTop: $(decodeURI($(this).attr("href"))).offset().top - 25
+    }, {
+      duration: 500,
+      easing: "swing"
+    });
   });
+});
 
-})(jQuery);
+$(document).on("copy", function(){
+  if(!window.copyTip){ return; }
+  var sel = document.getSelection();
+  var ele = document.createElement("div");
+  ele.innerHTML = '<div style="position: fixed;opacity: 0;white-space: pre;">' + sel + "\n\n" + window.copyTip.replaceAll("%url",document.location.href) + ' </div>' 
+  document.body.appendChild(ele);
+  sel.selectAllChildren(ele);
+  setTimeout(function () {document.body.removeChild(ele);});
+});
