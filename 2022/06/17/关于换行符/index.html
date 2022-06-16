@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>vscode搭建 - Q9-K</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="﻿关于 ‘ \ r ‘ 的那些事
+如果对本内容有相关疑问，欢迎联系 &amp;#x31;&amp;#x37;&amp;#48;&amp;#54;&amp;#x7a;&amp;#x63;&amp;#121;&amp;#x40;&amp;#x62;&amp;#x75;&amp;#97;&amp;#,"> 
+    <meta name="author" content="Q9-K"> 
+    <link rel="alternative" href="atom.xml" title="Q9-K" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="vscode搭建 - Q9-K"/>
+    <meta name="twitter:description" content="﻿关于 ‘ \ r ‘ 的那些事
+如果对本内容有相关疑问，欢迎联系 &amp;#x31;&amp;#x37;&amp;#48;&amp;#54;&amp;#x7a;&amp;#x63;&amp;#121;&amp;#x40;&amp;#x62;&amp;#x75;&amp;#97;&amp;#,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="Q9-K"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="vscode搭建 - Q9-K"/>
+    <meta property="og:description" content="﻿关于 ‘ \ r ‘ 的那些事
+如果对本内容有相关疑问，欢迎联系 &amp;#x31;&amp;#x37;&amp;#48;&amp;#54;&amp;#x7a;&amp;#x63;&amp;#121;&amp;#x40;&amp;#x62;&amp;#x75;&amp;#97;&amp;#,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script>window.searchDbPath = "/search.xml";</script>
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">Q9-K</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://Q9-K.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">vscode搭建</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">vscode搭建</h1>
+        <div class="stuff">
+            <span>六月 17, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/bug/" rel="tag">bug</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p>﻿<strong>关于</strong> ‘ \ r ‘ <strong>的那些事</strong></p>
+<p>如果对本内容有相关疑问，欢迎联系 <a href="mailto:&#x31;&#x37;&#48;&#54;&#x7a;&#x63;&#121;&#x40;&#x62;&#x75;&#97;&#97;&#x2e;&#x65;&#100;&#117;&#x2e;&#x63;&#x6e;">&#x31;&#x37;&#48;&#54;&#x7a;&#x63;&#121;&#x40;&#x62;&#x75;&#97;&#97;&#x2e;&#x65;&#100;&#117;&#x2e;&#x63;&#x6e;</a><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.002.png"></p>
+<p><strong>0.开头语<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.003.png"></strong></p>
+<p>这是一个十分令人头疼的问题，头疼你我他，即便是老师和助教，一个不小心也不可避免地会犯下这样 的错误。</p>
+<p>同学们在做题的时候，一般在 Windows 系统下本地测试，助教们也普遍在 Windows 系统下进行数据的生 成。虽然OJ一般来说会自动去掉行末的空白字符再进行评测，但是有的时候也同样会出现问题。<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.004.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.005.png"></p>
+<p>然后导致的问题就是，同学们要无缘无故地为这样的错误买单，部分的助教和老师们也会认为这是一个 大家本就该考虑到的问题。这也会导致双方无法在这个问题上达成共识，在很多题目上助教和老师一个 给不出解决的方法。以 Mid-2021Spr-两航-C期中考试 的F 题为例，很多使用 gets 的同学都只拿到了<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.006.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.007.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.008.png"></p>
+<p><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.009.png"> 分。而本题目测也是从2018级的两航C语言的考试题搬运过来的，这说明这个问题其实从很久以前 就有了，但是每一年都要因为这个事情闹一次争执一次，一直得不到有效的解决方法，故笔者打算写一 篇说明，针对这个问题进行一下科普。</p>
+<ol>
+<li><strong>关于</strong> ‘ \ r ‘ <strong>和</strong> ‘ \ n’ <strong>的来历</strong></li>
+</ol>
+<p>以下内容摘自该博客 : <a target="_blank" rel="noopener" href="https://www.cnblogs.com/the-tops/p/5626828.html">https://www.cnblogs.com/the-tops/p/5626828.html</a></p>
+<p>在计算机还没有出现之前，有一种叫做电传打字机（Teletype Model 33）的玩意，每秒钟可以打 10个字符。但是它有一个问题，就是打完一行换行的时候，要用去0.2秒，正好可以打两个字符。 要是在这0.2秒里面，又有新的字符传过来，那么这个字符将丢失。</p>
+<p>于是，研制人员想了个办法解决这个问题，就是在每行后面加两个表示结束的字符。一个叫做“回 车”，告诉打字机把打印头定位在左边界；另一个叫做“换行”，告诉打字机把纸向下移一行。</p>
+<p>这就是“换行”和“回车”的来历，从它们的英语名字上也可以看出一二。</p>
+<p>后来，计算机发明了，这两个概念也就被般到了计算机上。那时，存储器很贵，一些科学家认为在 每行结尾加两个字符太浪费了，加一个就可以。于是，就出现了分歧。</p>
+<p>Unix系统里，每行结尾只有“&lt;换行&gt;”，即“\n”；Windows系统里面，每行结尾是“&lt;换行&gt;&lt;回车&gt;”， 即“\r\n”；Mac系统里，每行结尾是“&lt;回车&gt;”。一个直接后果是，Unix&#x2F;Mac系统下的文件在 Windows里打开的话，所有文字会变成一行；而Windows里的文件在Unix&#x2F;Mac下打开的话，在每 行的结尾可能会多出一个^M符号。</p>
+<p>c语言编程时（windows系统）\r 就是return 回到 本行 行首 这就会把这一行以前的输出 覆盖掉 以下内容摘自该博客 : <a target="_blank" rel="noopener" href="https://blog.csdn.net/lgouc/article/details/7815523">https://blog.csdn.net/lgouc/article/details/7815523</a></p>
+<p>记得在Windows下学X86汇编语言时，用0DH(\r)和0AH(\n)来输出回车(跳到下一行的开始处)。问 题来了，在Windows下是先回车再换行呢还是先换行再回车呢？在Unix系统下换行只有\n，MAC OS下只有\r(网上是这么说的, 没用过Mac OS, 无从证实)，都不会出现上述的问题</p>
+<p>现在新建一个文本文档，其内容如下：</p>
+<p><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.013.png"></p>
+<p>现在用C语言二进制形式将其读入字符串并按十进制输出。结果如下：</p>
+<p><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.015.png"></p>
+<p>可以看出回车是 <img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.016.png"> 和 <img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.017.png"> 也就是 ‘\r’ 和’\n’ ，即先回车后换行。 <img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.018.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.019.png">一言以蔽之，有如下的区别</p>
+<ul>
+<li>回车符 \r 和换行符 \n ，是  个符。一个回车，一个换行。\r仅仅是回车，\n是换行。一个是控制 屏幕或者从键盘的Enter键输入。另一个是控制“打印机”！<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.020.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.021.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.022.png"><ul>
+<li>回车 &#x3D; 光标到达最左侧，换行 &#x3D; 移到下一行。如果只回车，打印的东西会覆盖同行以前的内容，如 果只换行，打印的东西会在下一行的先一个位置继续。<ul>
+<li>‘\r’ 实际是回到行首。 ‘\n’ 如果下一行已经有了一些内容的话它会在那些内容的后边.因为一般 情况下下一行是没有数据的,很多时候<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.023.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.024.png"> ‘\n’ 也就成了 “\r\n” 作用一样。<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.025.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.026.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li><strong>在</strong> Li nux <strong>系统下</strong> ‘ \ r ‘ <strong>的具体表现形式<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.027.png"></strong></li>
+</ol>
+<p><strong>输出</strong> ‘ \ r ‘<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.028.png"></p>
+<p>我们用不同的程序来演示一下</p>
+<p>#include&lt;stdio.h&gt;</p>
+<p>int main() {</p>
+<p><code>   </code>printf(“dddddd\n \r “);    printf(“12345”);</p>
+<p>}</p>
+<p><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.030.jpeg"></p>
+<p>可以看到其输出为</p>
+<p>dddddd  12345</p>
+<p><strong>输入</strong> ‘ \ r ‘</p>
+<p>我们<strong>以某一个题目的样例输入为例</strong></p>
+<p>x s z c o q k t x s z c o q k </p>
+<p>可以看到，这两行的长度是<strong>完全一致</strong>的，且行末都没有空格。</p>
+<p>但是如果该数据 <strong>是在</strong> Wi ndows <strong>系统下，写程序，通过文件重定向生成的</strong> ，以最后一行作为文件的结尾， 我们采用以下程序来查看每一个字符串的长度。<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.034.png"></p>
+<p>#include&lt;stdio.h&gt;</p>
+<p>#include&lt;string.h&gt;</p>
+<p>char s[1100];</p>
+<p>int main() {</p>
+<p><code>   </code>while (gets(s))</p>
+<p><code>     </code>printf(“s is : %s\nthe length of s is : %d\n”, s,strlen(s)); }</p>
+<p><strong>以下</strong> Wi ndows  10 <strong>系统下的</strong> devcpp <strong>查看到的输出 :<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.036.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.037.png"></strong></p>
+<p><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.038.jpeg"></p>
+<p>s is : x s z c o q k t the<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.039.png"> length of s is : 15 s is : x s z c o q k t the length of s is : 15</p>
+<p><strong>而在以</strong> Li nux <strong>环境下部署的在线 IDE当中所看到的输出却是这样的 :<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.040.png"></strong></p>
+<p><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.041.jpeg"></p>
+<p>s is : x s z c o q k t the length of s is : 16 s is : x s z c o q k t the length of s is : 15</p>
+<p><strong>看到差别了吗？第一行和第二行的长度，在</strong> Li nux <strong>下竟然是不同的！ 说白了，这就是第一行的<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.043.png"></strong> ‘ \ r ‘ <strong>在作祟</strong></p>
+<p>（而第二行的末尾没有换行，直接就是 EOF 了， EOF 也不会计算在字符串内）<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.045.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.046.png"></p>
+<ol start="3">
+<li><strong>是否有必要”声讨”OJ？提议OJ更换部署环境？<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.047.png"></strong></li>
+</ol>
+<p><strong>事实上，完全没有必要。而且无论是作为学生还是助教，也无权要求OJ更换部署环境。</strong></p>
+<p>要知道， OJ的部署环境各异，但是 <strong>无论是</strong> Wi ndows <strong>还是</strong> Li nux <strong>，都是业界经常使用的环境之一。倒不 如说，现在的各大权威性的OJ，基本上采用的都是</strong> Li nux 环境</p>
+<p>以高校内使用的OJ为例，北航OJ自不必多说，采用的是64位的 Linux 系统 <strong>清华大学</strong>校内授课的OJ <a target="_blank" rel="noopener" href="https://dsa.cs.tsinghua.edu.cn/oj/index.shtml">https://dsa.cs.tsinghua.edu.cn/oj/index.shtml </a>用于进行程序设计、数据结构、离散数学、计算几何等课程的教学</p>
+<p>采用的是 64 位 Linux 系统 Ubuntu 18.04<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.053.png"></p>
+<p>其用于举办各种比赛的TUOJ （thusaac）也基本是要求在 Ubuntu 系统下进行编写与提交。 以信息竞赛相关的一些权威OJ为例</p>
+<p>LOJ<a target="_blank" rel="noopener" href="https://loj.ac/"> https://loj.ac/</a></p>
+<p>采用的评测机内核为： Linux 5.4.106-1-pve</p>
+<p>洛谷 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/">https://www.luogu.com.cn/</a></p>
+<p>评测C&#x2F;C++时的环境如下： gcc version 8.3.0 (Debian 8.3.0-6.1)<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.056.png"></p>
+<p>值得注意的是 Debian 同样是一个 Linux 系统。<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.057.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.058.png"></p>
+<p>NOI全国青少年信息学奥林匹克竞赛</p>
+<p>其推出的 NOI Linux 就是专门为信息学奥林匹克竞赛选手设计的操作系统，是NOI系列赛事指定的操作 系统。<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.059.png"></p>
+<ol>
+<li>‘ \ r ‘ <strong>的解决方法 ——致同学<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.060.png"></strong></li>
+</ol>
+<p>作为同学，日后如果依旧要写代码，无论是做什么工作，都会不可避免地和 ‘\r’ 打交道。为此，也就 有必要了解处理<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.061.png"> ‘\r’ 的办法。<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.062.png"></p>
+<p>一般来说，直接使用 scanf 函数的话，<strong>除了</strong>采用 %c 读取<strong>单个字符</strong>之外，都会直接略过所有的空白字符 （显然，<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.063.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.064.png"> ‘ \ r ‘ <strong>也在此列</strong> ），基本不需要处理这样的问题。<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.065.png"></p>
+<p><strong>但是如果采用</strong> get s <strong>或者</strong> f get s <strong>函数</strong> ，则需要考虑行末 \r 的问题。<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.066.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.067.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.068.png"></p>
+<p>而鉴于 gets 函数已经在现有的 C&#x2F;C++ 标准当中被<strong>废除</strong>（只有 devcpp 等老旧的IDE才可以使用），所以 推荐大家在日后写代码的时候，采用<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.069.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.070.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.071.png"> fgets 函数。<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.072.png"></p>
+<p><strong>采用</strong> get s <strong>函数的解决方法<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.073.png"></strong></p>
+<p>#include&lt;stdio.h&gt;</p>
+<p>#include&lt;string.h&gt;</p>
+<p>char s[110];</p>
+<p>int len;</p>
+<p>int main() {</p>
+<p><code>    </code>gets(s);</p>
+<p><code>    </code>len &#x3D; strlen(s);</p>
+<p><code>    </code>while (s[len - 1] &#x3D;&#x3D; ‘\r’) s[–len] &#x3D; ‘\0’;</p>
+<p><code>   </code>&#x2F;&#x2F;通过对len前置自减，可以保证字符串s去掉\r之后，len依旧等于strlen(s)</p>
+<p>}</p>
+<p><strong>采用</strong> f get s <strong>函数的解决方法<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.075.png"></strong></p>
+<p>#include&lt;stdio.h&gt;</p>
+<p>#include&lt;string.h&gt;</p>
+<p>char s[110];</p>
+<p>int len;</p>
+<p>int main() {</p>
+<p><code>    </code>fgets(s, 110, stdin);</p>
+<p><code>    </code>len &#x3D; strlen(s);</p>
+<p><code>    </code>while (s[len - 1] &#x3D;&#x3D; ‘\n’ || s[len - 1] &#x3D;&#x3D; ‘\r’) s[–len] &#x3D; ‘\0’;    &#x2F;&#x2F;通过对len前置自减，可以保证字符串s去掉\r和\n之后，len依旧等于strlen(s)</p>
+<p>}</p>
+<p>C++ <strong>语言采用</strong> get l i ne <strong>函数的解决方法<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.077.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.078.png"></strong></p>
+<p>#include<iostream></p>
+<p>#include<string></p>
+<p>using namespace std;</p>
+<p>string in;</p>
+<p>int main() {</p>
+<p><code>    </code>getline(cin, in);</p>
+<p><code>    </code>while (in.back() &#x3D;&#x3D; ‘\r’) in.pop_back(); }</p>
+<ol start="2">
+<li>‘ \ r ‘ <strong>的解决方法 ——致出题的助教和老师</strong></li>
+</ol>
+<p>作为助教和老师，我们要考虑到，<strong>对于绝大部分使用</strong> 进行评测，在一门<strong>只是在介绍C语言程序设计的课程</strong> 这毫无疑问对他们是<strong>不公平的</strong>。</p>
+<p><strong>这样的问题，显然不可以让他们来平白无故地为之买单。 那么在出题的时候，如果在制造数据的时候没有去掉</strong></p>
+<p>Wi ndows <strong>和</strong> MaxOS <strong>做题的学生</strong> ，使用 Linux 环境 当中，<strong>强迫</strong>他们<strong>自发</strong>地考虑到跨平台带来的问题，</p>
+<p>‘ \ r ‘ <strong>，至少将上述的方法普及给大家。<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.081.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.082.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.083.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.084.png"></strong></p>
+<p>但是如果出某道题目的重点<strong>不在于字符串处理，那么这个问题完全可以由出数据的助教和老师们自行解 决。</strong></p>
+<p>对于 Windows 环境，我们可以采用 not epad++ <strong>或者</strong> Subl i ne  Text 等文本编辑器。以下以<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.085.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.086.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.087.png"></p>
+<p>notepad++ 为例。<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.088.png"></p>
+<p><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.089.jpeg"></p>
+<p>找到<strong>替换</strong></p>
+<p><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.090.jpeg"></p>
+<p><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.091.jpeg"></p>
+<p><strong>在 “查找目标 ”一栏填写</strong> \ r <strong>， “替换为 ”一栏什么都不填，空着<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.092.png"></strong></p>
+<p><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.093.jpeg"></p>
+<p><strong>切记：在查找模式当中改为“正则表达式”！！！</strong> 接下来，<strong>点击“全部替换”</strong></p>
+<p><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.094.jpeg"></p>
+<p>这时我们看到，文件被修改， <img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.095.png"> 个 ‘\r’ 已经全部被去掉，至此，数据的 ‘\r’ <strong>已经全部清除完毕！<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.096.png"><img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.097.png"></strong></p>
+<p><strong>3.节后语<img src="/2022/06/17/%E5%85%B3%E4%BA%8E%E6%8D%A2%E8%A1%8C%E7%AC%A6/Aspose.Words.dd6e8fb3-c38f-4a43-b73f-c9879c888c0c.047.png"></strong></p>
+<p>没什么想说的，只希望这篇文章能够帮助大家，让同学们少一些疑惑，减少老师、助教与学生之间在这 个问题上年复一年的纷争。</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
