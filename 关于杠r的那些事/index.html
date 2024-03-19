@@ -1,0 +1,290 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>关于杠r的那些事 | Q9-K's Blog</title><meta name="author" content="Q9-K"><meta name="copyright" content="Q9-K"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="这是我在大一一位C语言助教的作品，因为非常喜欢，本文经过原作者同意将其搬运到了我的博客当中(有所删改)。如果对本内容有相关疑问，欢迎联系&#49;&#x37;&#48;&#x36;&#x7a;&#x63;&#x79;&#64;&#98;&#117;&#97;&#x61;&#46;&#x65;&#x64;&#x75;&#x2e;&#99;&#x6e;。  开头语这是一个十分令人头疼的问题，头疼你我">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于杠r的那些事">
+<meta property="og:url" content="http://q9-k.github.io/%E5%85%B3%E4%BA%8E%E6%9D%A0r%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/index.html">
+<meta property="og:site_name" content="Q9-K&#39;s Blog">
+<meta property="og:description" content="这是我在大一一位C语言助教的作品，因为非常喜欢，本文经过原作者同意将其搬运到了我的博客当中(有所删改)。如果对本内容有相关疑问，欢迎联系&#49;&#x37;&#48;&#x36;&#x7a;&#x63;&#x79;&#64;&#98;&#117;&#97;&#x61;&#46;&#x65;&#x64;&#x75;&#x2e;&#99;&#x6e;。  开头语这是一个十分令人头疼的问题，头疼你我">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://image-static.segmentfault.com/443/032/443032884-6576facdd5011_cover">
+<meta property="article:published_time" content="2024-03-19T13:36:37.000Z">
+<meta property="article:modified_time" content="2024-03-19T14:07:19.132Z">
+<meta property="article:author" content="Q9-K">
+<meta property="article:tag" content="代码">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://image-static.segmentfault.com/443/032/443032884-6576facdd5011_cover"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Q9-K/Picture@main/k.svg"><link rel="canonical" href="http://q9-k.github.io/%E5%85%B3%E4%BA%8E%E6%9D%A0r%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Q9-K","link":"链接: ","source":"来源: Q9-K's Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '关于杠r的那些事',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-03-19 22:07:19'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 7.1.1"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (false) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Q9-K/Picture@main/background.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Q9-K's Blog"><img class="site-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Q9-K/Picture@main/k.svg"/><span class="site-name">Q9-K's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">关于杠r的那些事</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-03-19T13:36:37.000Z" title="发表于 2024-03-19 21:36:37">2024-03-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-03-19T14:07:19.132Z" title="更新于 2024-03-19 22:07:19">2024-03-19</time></span></div><div class="meta-secondline"></div></div></div><article class="post-content" id="article-container"><blockquote>
+<p>这是我在大一一位C语言助教的作品，因为非常喜欢，本文经过原作者同意将其搬运到了我的博客当中(有所删改)。如果对本内容有相关疑问，欢迎联系<a href="mailto:&#49;&#x37;&#48;&#x36;&#x7a;&#x63;&#x79;&#64;&#98;&#117;&#97;&#x61;&#46;&#x65;&#x64;&#x75;&#x2e;&#99;&#x6e;">&#49;&#x37;&#48;&#x36;&#x7a;&#x63;&#x79;&#64;&#98;&#117;&#97;&#x61;&#46;&#x65;&#x64;&#x75;&#x2e;&#99;&#x6e;</a>。</p>
+</blockquote>
+<h2 id="开头语"><a href="#开头语" class="headerlink" title="开头语"></a>开头语</h2><p>这是一个十分令人头疼的问题，头疼你我他，即便是老师和助教，一个不小心也不可避免地会犯下这样的错误。</p>
+<p>同学们在做题的时候，一般在<strong>Windows</strong> 系统下本地测试，助教们也普遍在<strong>Windows</strong> 系统下进行数据的生成。虽然OJ一般来说会自动去掉行末的空白字符再进行评测，但是有的时候也同样会出现问题。</p>
+<p>然后导致的问题就是，同学们要无缘无故地为这样的错误买单，部分的助教和老师们也会认为这是一个大家本就该考虑到的问题。这也会导致双方无法在这个问题上达成共识，在很多题目上助教和老师一个给不出解决的方法。在北航，每一年都要因为这个事情闹一次争执一次，一直得不到有效的解决方法，故笔者打算写一篇说明，针对这个问题进行一下科普。</p>
+<h2 id="关于-r和-n的来历"><a href="#关于-r和-n的来历" class="headerlink" title="关于\r和\n的来历"></a>关于<code>\r</code>和<code>\n</code>的来历</h2><p>以下内容摘自该博客 : <a target="_blank" rel="noopener" href="https://www.cnblogs.com/the-tops/p/5626828.html%E3%80%82">https://www.cnblogs.com/the-tops/p/5626828.html。</a></p>
+<blockquote>
+<p>在计算机还没有出现之前，有一种叫做电传打字机（Teletype Model 33）的玩意，每秒钟可以打10个字符。但是它有一个问题，就是打完一行换行的时候，要用去0.2秒，正好可以打两个字符。要是在这0.2秒里面，又有新的字符传过来，那么这个字符将丢失。<br>于是，研制人员想了个办法解决这个问题，就是在每行后面加两个表示结束的字符。一个叫做<code>回车</code>，告诉打字机把打印头定位在左边界；另一个叫做<code>换行</code>，告诉打字机把纸向下移一行。<br>这就是<code>换行</code>和<code>回车</code>的来历，从它们的英语名字上也可以看出一二。<br>后来，计算机发明了，这两个概念也就被般到了计算机上。那时，存储器很贵，一些科学家认为在每行结尾加两个字符太浪费了，加一个就可以。于是，就出现了分歧。<br>Unix系统里，每行结尾只有<code>&lt;换行&gt;</code>，即<code>\n</code>；Windows系统里面，每行结尾是<code>&lt;换行&gt;&lt;回车&gt;</code>，即<code>\r\n</code>；Mac系统里，每行结尾是<code>&lt;回车&gt;</code>。一个直接后果是，Unix&#x2F;Mac系统下的文件在Windows里打开的话，所有文字会变成一行；而Windows里的文件在Unix&#x2F;Mac下打开的话，在每行的结尾可能会多出一个<code>^M</code>符号。<br>c语言编程时（windows系统）“\r” 就是return 回到 本行  行首  这就会把这一行以前的输出  覆盖掉。</p>
+</blockquote>
+<p>以下内容摘自该博客 : <a target="_blank" rel="noopener" href="https://blog.csdn.net/lgouc/article/details/7815523%E3%80%82">https://blog.csdn.net/lgouc/article/details/7815523。</a></p>
+<blockquote>
+<p>记得在Windows下学X86汇编语言时，用0DH(<code>\r</code>)和0AH(<code>\n</code>)来输出回车(跳到下一行的开始处)。问题来了，在Windows下是先回车再换行呢还是先换行再回车呢？在Unix系统下换行只有<code>\n</code>，MACOS下只有<code>\r</code>(网上是这么说的, 没用过Mac OS, 无从证实)，都不会出现上述的问题。<br>现在新建一个文本文档，其内容如下：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Q9-K/Picture@main/image-20240319214647333.png" alt="image-20240319214647333"></p>
+<p>现在用C语言二进制形式将其读入字符串并按十进制输出。结果如下：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Q9-K/Picture@main/image-20240319214700932.png" alt="image-20240319214700932"></p>
+<p>可以看出回车是 13 和 10 也就是<code>\r</code> 和<code>\n</code> ，即先回车后换行。</p>
+</blockquote>
+<p>一言以蔽之，有如下的区别。</p>
+<ul>
+<li>回车符<code>\r</code> 和换行符<code>\n</code> ，是 2 个符。一个回车，一个换行。<code>\r</code>仅仅是回车，<code>\n</code>是换行。一个是控制<br>屏幕或者从键盘的Enter键输入。另一个是控制“打印机”！</li>
+<li>回车 &#x3D; 光标到达最左侧，换行 &#x3D; 移到下一行。如果只回车，打印的东西会覆盖同行以前的内容，如<br>果只换行，打印的东西会在下一行的先一个位置继续。</li>
+<li><code>\r</code> 实际是回到行首。<code>\n</code> 如果下一行已经有了一些内容的话它会在那些内容的后边.因为一般<br>情况下下一行是没有数据的,很多时候<code>\n</code> 也就成了<code>\r\n</code> 作用一样。</li>
+</ul>
+<h2 id="在Linux系统下-r的具体表现形式"><a href="#在Linux系统下-r的具体表现形式" class="headerlink" title="在Linux系统下\r的具体表现形式"></a>在Linux系统下<code>\r</code>的具体表现形式</h2><h3 id="输出-r"><a href="#输出-r" class="headerlink" title="输出\r"></a>输出<code>\r</code></h3><p>我们用不同的程序来演示一下</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> &#123;<br>	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;dddddd\n \r &quot;</span>);<br>	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;12345&quot;</span>);<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Q9-K/Picture@main/image-20240319215149534.png" alt="image-20240319215149534"></p>
+<p>可以看到其输出为</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">dddddd</span><br><br><span class="hljs-number">12345</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="输入-r"><a href="#输入-r" class="headerlink" title="输入\r"></a>输入<code>\r</code></h3><p>以下面的样例为例</p>
+<figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs llvm"><span class="hljs-keyword">x</span> s z <span class="hljs-keyword">c</span> o q k t<br><span class="hljs-keyword">x</span> s z <span class="hljs-keyword">c</span> o q k t<br></code></pre></td></tr></table></figure>
+
+<p>可以看到，这两行的长度是<strong>完全一致</strong>的，且行末都没有空格。</p>
+<p>但是如果该数据是<strong>在Windows 系统下，写程序，通过文件重定向生成</strong>的，以最后一行作为文件的结尾，我们采用以下程序来查看每一个字符串的长度。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">char</span> s[<span class="hljs-number">1100</span>];<br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> &#123;<br>	<span class="hljs-keyword">while</span> (gets(s))<br>		<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;s is : %s\nthe length of s is : %d\n&quot;</span>, s,<span class="hljs-built_in">strlen</span>(s));<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>以下<strong>Windows 10 系统</strong>下的<strong>devcpp</strong> 查看到的输出:</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Q9-K/Picture@main/image-20240319215425084.png" alt="image-20240319215425084"></p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs ada">s <span class="hljs-keyword">is</span> : <span class="hljs-type">x</span> s z c o q k t<br>the length <span class="hljs-keyword">of</span> s <span class="hljs-keyword">is</span> : 15<br>s <span class="hljs-keyword">is</span> : <span class="hljs-type">x</span> s z c o q k t<br>the length <span class="hljs-keyword">of</span> s <span class="hljs-keyword">is</span> : 15<br></code></pre></td></tr></table></figure>
+
+<p>而在以<strong>Linux 环境</strong>下部署的在线IDE当中所看到的输出却是这样的:</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Q9-K/Picture@main/image-20240319215452299.png" alt="image-20240319215452299"></p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs ada">s <span class="hljs-keyword">is</span> : <span class="hljs-type">x</span> s z c o q k t<br>the length <span class="hljs-keyword">of</span> s <span class="hljs-keyword">is</span> : 16<br>s <span class="hljs-keyword">is</span> : <span class="hljs-type">x</span> s z c o q k t<br>the length <span class="hljs-keyword">of</span> s <span class="hljs-keyword">is</span> : 15<br></code></pre></td></tr></table></figure>
+
+<p>看到差别了吗？第一行和第二行的长度，在Linux 下竟然是<strong>不同</strong>的！</p>
+<p>说白了，这就是第一行的<code>\r</code> 在作祟(而第二行的末尾没有换行，直接就是<code>EOF</code>了， <code>EOF</code>也不会计算在字符串内)</p>
+<h2 id="对同学们来说的解决办法"><a href="#对同学们来说的解决办法" class="headerlink" title="对同学们来说的解决办法"></a>对同学们来说的解决办法</h2><p>作为同学，日后如果依旧要写代码，无论是做什么工作，都会不可避免地和<code>\r</code> 打交道。为此，也就有必要了解处理<code>\r</code> 的办法。</p>
+<p>一般来说，直接使用<strong>scanf</strong>函数的话，除了采用<code>%c</code>读取单个字符之外，都会直接略过所有的空白字符（显然， <code>\r</code>也在此列），基本不需要处理这样的问题。</p>
+<p>但是如果采用<strong>gets</strong>或者<strong>fgets</strong>函数，则需要考虑行末<code>\r</code>的问题。</p>
+<p>而鉴于<strong>gets</strong>函数已经在现有的<strong>C&#x2F;C++<strong>标准当中被废除（只有</strong>devcpp</strong>等老旧的IDE才可以使用），所以推荐大家在日后写代码的时候，采用<code>fgets</code>函数。</p>
+<h3 id="采用fgets函数的解决方法"><a href="#采用fgets函数的解决方法" class="headerlink" title="采用fgets函数的解决方法"></a>采用<code>fgets</code>函数的解决方法</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">char</span> s[<span class="hljs-number">110</span>];<br><span class="hljs-type">int</span> len;<br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> &#123;<br>	gets(s);<br>	len = <span class="hljs-built_in">strlen</span>(s);<br>	<span class="hljs-keyword">while</span> (s[len - <span class="hljs-number">1</span>] == <span class="hljs-string">&#x27;\r&#x27;</span>) s[--len] = <span class="hljs-string">&#x27;\0&#x27;</span>;<br>	<span class="hljs-comment">//通过对len前置自减，可以保证字符串s去掉\r之后，len依旧等于strlen(s)</span><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="采用fgets函数的解决方法-1"><a href="#采用fgets函数的解决方法-1" class="headerlink" title="采用fgets函数的解决方法"></a>采用<code>fgets</code>函数的解决方法</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">char</span> s[<span class="hljs-number">110</span>];<br><span class="hljs-type">int</span> len;<br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> &#123;<br>	fgets(s, <span class="hljs-number">110</span>, <span class="hljs-built_in">stdin</span>);<br>	len = <span class="hljs-built_in">strlen</span>(s);<br>	<span class="hljs-keyword">while</span> (s[len - <span class="hljs-number">1</span>] == <span class="hljs-string">&#x27;\n&#x27;</span> || s[len - <span class="hljs-number">1</span>] == <span class="hljs-string">&#x27;\r&#x27;</span>) s[--len] = <span class="hljs-string">&#x27;\0&#x27;</span>;<br>	<span class="hljs-comment">//通过对len前置自减，可以保证字符串s去掉\r和\n之后，len依旧等于strlen(s)</span><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="C-语言采用getline函数的解决方法"><a href="#C-语言采用getline函数的解决方法" class="headerlink" title="C++语言采用getline函数的解决方法"></a><code>C++</code>语言采用<code>getline</code>函数的解决方法</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;string&gt;</span></span><br>using namespace <span class="hljs-built_in">std</span>;<br><span class="hljs-built_in">string</span> in;<br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> &#123;<br>	getline(<span class="hljs-built_in">cin</span>, in);<br>	<span class="hljs-keyword">while</span> (in.back() == <span class="hljs-string">&#x27;\r&#x27;</span>) in.pop_back();<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2 id="节后语"><a href="#节后语" class="headerlink" title="节后语"></a>节后语</h2><blockquote>
+<p>没什么想说的，只希望这篇文章能够帮助大家，让同学们少一些疑惑，减少老师、助教与学生之间在这个问题上年复一年的纷争。</p>
+<p>​																									——开花学长</p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://q9-k.github.io">Q9-K</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://q9-k.github.io/%E5%85%B3%E4%BA%8E%E6%9D%A0r%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/">http://q9-k.github.io/关于杠r的那些事/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://q9-k.github.io" target="_blank">Q9-K's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E4%BB%A3%E7%A0%81/">代码</a></div><div class="post_share"><div class="social-share" data-image="https://image-static.segmentfault.com/443/032/443032884-6576facdd5011_cover" data-sites="wechat,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Q9-K/Picture@main/background.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Q9-K</div><div class="author-info__description">行到水穷处, 坐看云起时</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Q9-K"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Q9-K" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%A4%B4%E8%AF%AD"><span class="toc-number">1.</span> <span class="toc-text">开头语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E-r%E5%92%8C-n%E7%9A%84%E6%9D%A5%E5%8E%86"><span class="toc-number">2.</span> <span class="toc-text">关于\r和\n的来历</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8Linux%E7%B3%BB%E7%BB%9F%E4%B8%8B-r%E7%9A%84%E5%85%B7%E4%BD%93%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F"><span class="toc-number">3.</span> <span class="toc-text">在Linux系统下\r的具体表现形式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA-r"><span class="toc-number">3.1.</span> <span class="toc-text">输出\r</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5-r"><span class="toc-number">3.2.</span> <span class="toc-text">输入\r</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E5%90%8C%E5%AD%A6%E4%BB%AC%E6%9D%A5%E8%AF%B4%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95"><span class="toc-number">4.</span> <span class="toc-text">对同学们来说的解决办法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%87%E7%94%A8fgets%E5%87%BD%E6%95%B0%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="toc-number">4.1.</span> <span class="toc-text">采用fgets函数的解决方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%87%E7%94%A8fgets%E5%87%BD%E6%95%B0%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95-1"><span class="toc-number">4.2.</span> <span class="toc-text">采用fgets函数的解决方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#C-%E8%AF%AD%E8%A8%80%E9%87%87%E7%94%A8getline%E5%87%BD%E6%95%B0%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="toc-number">4.3.</span> <span class="toc-text">C++语言采用getline函数的解决方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8A%82%E5%90%8E%E8%AF%AD"><span class="toc-number">5.</span> <span class="toc-text">节后语</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/Q9-K/Picture@main/footer.png')"><div id="footer-wrap"><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.8/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>(()=>{
+  const getGiscusTheme = theme => {
+    return theme === 'dark' ? 'dark' : 'light'
+  }
+
+  const loadGiscus = () => {
+    const config = Object.assign({
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'Q9-K/Q9-K.github.io',
+      'data-repo-id': 'R_kgDOHN9zeQ',
+      'data-category-id': 'DIC_kwDOHN9zec4CeDh4',
+      'data-mapping': 'pathname',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true
+    },null)
+
+    const ele = document.createElement('script')
+    for (let key in config) {
+      ele.setAttribute(key, config[key])
+    }
+    document.getElementById('giscus-wrap').appendChild(ele)
+  }
+
+  const changeGiscusTheme = theme => {
+    const sendMessage = message => {
+      const iframe = document.querySelector('iframe.giscus-frame')
+      if (!iframe) return
+      iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app')
+    }
+
+    sendMessage({
+      setConfig: {
+        theme: getGiscusTheme(theme)
+      }
+    });
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment= loadGiscus
+  }
+})()</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script></div></body></html>
